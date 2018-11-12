@@ -1,0 +1,130 @@
+*, html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.hero{
+  background: url("../img/stevenspielberg.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width:100%;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0,0,0,0,0.6)
+  z-index: 0;
+}
+
+.hero-text{
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 100%;
+  margin: 0 auto;
+  paddiong-top: 40vh;
+  z-index: 1000;
+  text-align:right;
+}
+
+h1{
+  color: white;
+  font-family: "Ruthie", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 144px;
+  margin: 0 0 10px;
+}
+p {
+  color: greys;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 21px;
+}
+a.btn {
+  background: linear-gradient(135deg,#2de5d0 0%,#f900f9 100%);
+  padding: 10px 20px;
+  color: white;
+  margin: 40px 0;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bio {
+  background: white;
+  padding: 3em 10em;
+  line-height: 1.4;
+}
+
+.bio p {
+  font-size: 40px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: "Rasa";
+}
+
+.bio{
+  background: gray;
+  padding: 3em 10em;
+}
+.photos {
+  background:black;
+  position: relative;
+}
+.photos:before {
+  content: "";
+  background: url('../img/oscar.png') top left no-repeat;
+  position: absolute;
+  width: 214px;
+  height: 214px;
+}
+.photos-container {
+  width: 80%;
+  margin:0 auto;
+}
+.photos-container:after, .photos-container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.single-photo {
+  display: inline-block;
+  width: 31.3%;
+  margin: 20px 1%;
+  float: left;
+}
+.single-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.photos h2 {
+  font-family: "Ruthie";
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 144px;
+  color: #FFFFFF;
+  text-align: center;
+}
+}
